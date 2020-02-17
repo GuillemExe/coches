@@ -80,6 +80,11 @@ class CocheController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $coche = Coche::findOrFail($id);
+
+        $input = $request->all();
+
+        $coche->fill($input)->save();
     }
 
     /**

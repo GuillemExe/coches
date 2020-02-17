@@ -20,6 +20,11 @@ Route::get('/coche', 'CocheController@index');
 
 Route::get('/coche/{id}', 'CocheController@show');
 
+// CRETE
 Route::post('/coche/create', 'CocheController@store');
 
+// DESTROY
 Route::delete('/coche/{id}', 'CocheController@destroy');
+
+// UPDATE
+Route::put('/coche/{id}', 'CocheController@update');
