@@ -21,3 +21,5 @@ Route::get('/coche', 'CocheController@index');
 Route::get('/coche/{id}', 'CocheController@show');
 
 Route::post('/coche/create', 'CocheController@store');
+
+Route::delete('/coche/{id}', 'CocheController@destroy');

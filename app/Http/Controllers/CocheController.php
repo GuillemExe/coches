@@ -39,16 +39,7 @@ class CocheController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // $coche = new Coche();
-        // $coche->make = $request->make;
-        // $coche->model = $request->model;
-        // $coche->produced_on = $request->produced_on;
-        // $coche->save();
-        // Coche::create($coche);
-
         $coche = Coche::create($request->all());
-        // csrf_field() en vista
         return $coche;
     }
 
@@ -100,5 +91,6 @@ class CocheController extends Controller
     public function destroy($id)
     {
         //
+        Coche::find($id)->delete();
     }
 }
