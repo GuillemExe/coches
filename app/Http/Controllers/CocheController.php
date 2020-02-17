@@ -17,8 +17,10 @@ class CocheController extends Controller
         //
         $coches = Coche::all();
 
+        return view('coche.cocheLista', ['coches' => $coches]);
+
         // return csrf_token();
-        return $coches;
+        // return $coches;
     }
 
     /**

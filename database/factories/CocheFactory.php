@@ -10,5 +10,6 @@ $factory->define(Coche::class, function (Faker $faker) {
         'make' => $faker->name,
         'model' => $faker->company,
         'produced_on' => $faker->date(),
+        'coche_image' => $faker->imageUrl,
     ];
 });

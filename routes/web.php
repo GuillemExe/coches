@@ -15,9 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+// LIST COCHE
 Route::get('/coche', 'CocheController@index');
 
+// GET COCHE
 Route::get('/coche/{id}', 'CocheController@show');
 
 // CRETE
