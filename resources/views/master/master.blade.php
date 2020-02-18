@@ -18,52 +18,26 @@
 
         {{-- Definition style --}}
         <style type="text/css">
-            .grid-items {
-                display: grid;
-                grid-gap: 20px;
-                margin: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-            .item {
-                min-height: 30rem;
-                background-color: aliceblue;
-                display: flex;
-                border: 1px solid #e3e3e3;
-                border-radius: 8px;
-                background-position: center;
-                background-size: contain;
+            .image {
+                background-size: 50%;
                 background-repeat: no-repeat;
-            }
-            .content-item {
-                background-color: #ffffff90;
-                width: 100%;
+                background-position: center;
                 border-radius: 8px;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
+                border: 1px solid gray;
+                height: 300px;
             }
-            .button-item {
-                height: 20%;
-                display: flex;
-                background-color: white;
-                align-items: center;
-                width: 100%;
-                justify-content: center;
+            .image-add {
+                background-size: 25%;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 8px;
+                border: 1px solid gray;
+                height: 300px;
+                cursor: pointer;
+                background-color: white
             }
-            .button-radius-bottom-left {
-                border-bottom-left-radius: 8px;
-            }
-            .button-radius-bottom-right {
-                border-bottom-right-radius: 8px;
-            }
-            .button-info:hover {
-
-            }
-            .button-edit:hover {
-                
-            }
-            .button-delete:hover {
-                background-color: red;
+            .image-add:hover {
+                background-color: #efefef
             }
         </style>
     </head>
@@ -74,8 +48,10 @@
             @yield('header')
         </div>
         
-        <div class="container">
-            @yield('content')
+        <div style="background-color: #f9f9f9">
+            <div class="container">
+                @yield('content')
+            </div>
         </div>
 
         <div class="container-fluid m-0 p-0">

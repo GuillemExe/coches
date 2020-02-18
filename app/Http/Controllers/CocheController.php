@@ -99,5 +99,9 @@ class CocheController extends Controller
     {
         //
         Coche::find($id)->delete();
+
+        $coches = Coche::all();
+
+        return view('coche.cocheLista', ['coches' => $coches]);
     }
 }
