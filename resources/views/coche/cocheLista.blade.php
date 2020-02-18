@@ -27,9 +27,11 @@
             </div>
         @endforeach
     @endif
-    <div class="col-4 mb-5">
-        <div class="py-4 d-flex flex-column justify-content-center align-items-center image-add" style="background-image: url( {{ asset('img/plus.svg') }} )"></div>
-    </div>
+    <form class="col-4 mb-5" action="{{ url('/coche/create') }}" method="get">
+        <input class="py-4 d-flex flex-column justify-content-center align-items-center image-add" type="submit" style="background-image: url( {{ asset('img/plus.svg') }} ); width: 100%;"/>
+        @method('get')
+        @csrf
+    </form>
 </div>
 
 @endsection

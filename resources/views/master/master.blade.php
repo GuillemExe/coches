@@ -25,6 +25,7 @@
                 border-radius: 8px;
                 border: 1px solid gray;
                 height: 300px;
+                width: 350px;
             }
             .image-add {
                 background-size: 25%;

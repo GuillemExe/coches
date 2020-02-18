@@ -21,6 +21,9 @@ Route::get('/coche', 'CocheController@index');
 // GET COCHE
 Route::get('/coche/{id}', 'CocheController@show');
 
+// FORM TO CREATE
+Route::post('/coche/form', 'CocheController@create');
+
 // CRETE
 Route::post('/coche/create', 'CocheController@store');
 

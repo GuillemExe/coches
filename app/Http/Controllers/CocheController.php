@@ -31,6 +31,7 @@ class CocheController extends Controller
     public function create()
     {
         //
+        return view('coche.cocheForm');
     }
 
     /**
