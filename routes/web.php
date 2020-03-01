@@ -24,11 +24,14 @@ Route::get('/coche/{id}', 'CocheController@show');
 // FORM TO CREATE
 Route::post('/coche/form', 'CocheController@create');
 
-// CRETE
+// CREATE
 Route::post('/coche/create', 'CocheController@store');
+
+// FORM TO EDIT OR UPDATE
+Route::get('/coche/edit/{id}', 'CocheController@edit');
+
+// EDIT OR UPDATE
+Route::put('/coche/{id}', 'CocheController@update');
 
 // DESTROY
 Route::delete('/coche/{id}', 'CocheController@destroy');
-
-// UPDATE
-Route::put('/coche/{id}', 'CocheController@update');

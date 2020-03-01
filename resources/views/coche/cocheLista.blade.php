@@ -16,8 +16,12 @@
                     <div class="panel panel-default">
                         <div class="panel-body">{{ $coche->model }}</div>
                     </div>
-                    <button type="button" class="btn mt-4 btn-info w-25 justify-content-center">Info</button>
-                    <button type="button" class="btn mt-4 btn-warning w-25 justify-content-center">Edit</button>
+                    <form action="{{ url('/coche', ['id' => $coche->id]) }}" method="get">
+                        <input class="btn mt-4 btn-info justify-content-center" type="submit" value="Info"/>
+                    </form>
+                    <form action="{{ url('/coche/edit', ['id' => $coche->id]) }}" method="get">
+                        <input class="btn mt-4 btn-warning justify-content-center" type="submit" value="Edit"/>
+                    </form>
                     <form action="{{ url('/coche', ['id' => $coche->id]) }}" method="post">
                         <input class="btn mt-4 btn-danger justify-content-center" type="submit" value="Delete"/>
                         @method('delete')

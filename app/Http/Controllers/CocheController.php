@@ -73,7 +73,14 @@ class CocheController extends Controller
      */
     public function edit($id)
     {
-        //
+        // 
+        $coche = Coche::find($id);
+
+        // TO POSTMAN
+        // return $coche;
+
+        // TO VIEW
+        return view('coche.cocheEdit')->with('coche', $coche);
     }
 
     /**
