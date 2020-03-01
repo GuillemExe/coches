@@ -19,6 +19,7 @@ class CocheController extends Controller
 
         return view('coche.cocheLista', ['coches' => $coches]);
 
+        // TO POSTMAN
         // return csrf_token();
         // return $coches;
     }
@@ -57,9 +58,11 @@ class CocheController extends Controller
         //
         $coche = Coche::find($id);
 
-        
-        return $coche;
-        // return view('coche')->with('coche', $coche);
+        // TO POSTMAN
+        // return $coche;
+
+        // TO VIEW
+        return view('coche.cocheView')->with('coche', $coche);
     }
 
     /**

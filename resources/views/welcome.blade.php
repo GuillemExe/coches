@@ -61,6 +61,12 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .image-coche {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
         </style>
     </head>
     <body>
