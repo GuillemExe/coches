@@ -18,7 +18,7 @@ class CreateCochesTable extends Migration
             $table->string('make');
             $table->string('model');
             $table->date('produced_on');
-            $table->string('coche_image');
+            $table->string('coche_image')->nullable();
             $table->timestamps();
           });
     }

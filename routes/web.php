@@ -35,3 +35,8 @@ Route::put('/coche/{id}', 'CocheController@update');
 
 // DESTROY
 Route::delete('/coche/{id}', 'CocheController@destroy');
+
+// TESTING
+Route::patch('/coche/{id}',[
+    'update' => 'CocheController@update'
+]);
