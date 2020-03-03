@@ -22,7 +22,7 @@ Route::get('/coche', 'CocheController@index');
 Route::get('/coche/{id}', 'CocheController@show');
 
 // FORM TO CREATE
-Route::post('/coche/form', 'CocheController@create');
+Route::get('/coche/form', 'CocheController@create');
 
 // CREATE
 Route::post('/coche/create', 'CocheController@store');
@@ -35,8 +35,3 @@ Route::put('/coche/{id}', 'CocheController@update');
 
 // DESTROY
 Route::delete('/coche/{id}', 'CocheController@destroy');
-
-// TESTING
-Route::patch('/coche/{id}',[
-    'update' => 'CocheController@update'
-]);

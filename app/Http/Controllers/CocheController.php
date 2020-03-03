@@ -45,6 +45,8 @@ class CocheController extends Controller
     {
         $coche = Coche::create($request->all());
         return $coche;
+
+        return view('coche.cocheForm');
     }
 
     /**

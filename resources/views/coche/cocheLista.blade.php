@@ -31,10 +31,10 @@
             </div>
         @endforeach
     @endif
-    <form class="col-4 mb-5" action="{{ url('/coche/create') }}" method="get">
+    <form class="col-4 mb-5" action="{{ url('/coche/form') }}" method="get">
         <input class="py-4 d-flex flex-column justify-content-center align-items-center image-add" type="submit" style="background-image: url( {{ asset('img/plus.svg') }} ); width: 100%;"/>
-        @method('get')
-        @csrf
+        {{-- @method('get')
+        @csrf --}}
     </form>
 </div>
 
