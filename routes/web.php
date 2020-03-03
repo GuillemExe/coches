@@ -22,7 +22,7 @@ Route::get('/coche', 'CocheController@index');
 Route::get('/coche/{id}', 'CocheController@show');
 
 // FORM TO CREATE
-Route::get('/coche/form', 'CocheController@create');
+Route::get('/coche/create/new', 'CocheController@create');
 
 // CREATE
 Route::post('/coche/create', 'CocheController@store');

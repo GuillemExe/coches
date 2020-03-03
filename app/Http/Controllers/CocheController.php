@@ -32,10 +32,10 @@ class CocheController extends Controller
     public function create()
     {
         //
-        return view('coche.cocheForm');
+        return view('coche.cocheCreate');
     }
 
-    /**
+    /** 
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

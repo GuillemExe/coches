@@ -8,11 +8,10 @@
 
 
 @section('content')
-Hola
 <div>
-    <form action="{{ url('/coche') }}" method="post">
+    <form action="{{ url('/coche/create') }}" method="post">
         
-        @method('create')
+        @method('post')
         @csrf
     
         <div class="form-group">
@@ -36,7 +35,7 @@ Hola
             {{-- {{ Form::textGroup(['name' => 'coche_image', 'value' => $coche->coche_image, 'class' => 'form-control']) }} --}}
         </div>
 
-        <input class="btn mt-4 btn-danger justify-content-center" type="submit" value="update"/>
+        <input class="btn mt-4 btn-danger justify-content-center" type="submit" value="Create"/>
     </form>
 </div>
 
