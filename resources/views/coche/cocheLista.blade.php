@@ -4,6 +4,12 @@
 
 @section('header')
 @include('template.header')
+<style>
+    .btn:focus {
+        outline: none;
+        outline: 0 !important 
+    }
+</style>
 @endsection
 
 

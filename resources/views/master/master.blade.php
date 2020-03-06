@@ -40,6 +40,10 @@
             .image-add:hover {
                 background-color: #efefef
             }
+            .btn:focus {
+                outline: none;
+                outline: 0 !important 
+            }
         </style>
     </head>
 
