@@ -19,7 +19,7 @@
         {{-- Definition style --}}
         <style type="text/css">
             .image {
-                background-size: 50%;
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
                 border-radius: 8px;
